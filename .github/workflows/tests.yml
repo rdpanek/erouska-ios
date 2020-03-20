@@ -1,0 +1,26 @@
+name: Test
+
+on:
+  release:
+    # Only use the types keyword to narrow down the activity types that will trigger your workflow.
+    types: [published, created, edited]
+    branches:
+      - master
+      - develop
+  pull_request:
+    branches:
+      - master
+      - develop
+jobs:
+  build_ios:
+    name: Test App
+    runs-on: macos-latest
+    steps:  
+    - name: SetupKeychain
+      uses: sinoru/actions-setup-keychain@v1.0.0
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Build and test    
+      uses: maierj/fastlane-action@v1.4.0
+      with:
+        lane: 'test'

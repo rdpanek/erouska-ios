@@ -1,0 +1,19 @@
+name: BetaRelease
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build_ios:
+    name: Release Beta App
+    runs-on: macos-latest
+    steps:   
+    - name: SetupKeychain
+      uses: sinoru/actions-setup-keychain@v1.0.0
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Build and test    
+      uses: maierj/fastlane-action@v1.4.0
+      with:
+        lane: 'betaRelease'
