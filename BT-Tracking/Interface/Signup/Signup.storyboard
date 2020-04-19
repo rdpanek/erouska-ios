@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kfk-wA-RM9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kfk-wA-RM9">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
             <objects>
                 <navigationController id="kfk-wA-RM9" customClass="NavigationController" customModule="eRouska" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Aga-97-j0u">
-                        <rect key="frame" x="0.0" y="44" width="375" height="104.33333333333334"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -107,6 +107,7 @@ Když se potvrdí nákaza u vás, hygienická stanice bude kontaktovat všechny 
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m34-ff-402" customClass="RoundedButtonFilled" customModule="eRouska" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="continueButton"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="kXG-Uw-1h8"/>
                                                 </constraints>
@@ -202,6 +203,7 @@ Když se potvrdí nákaza u vás, hygienická stanice bude kontaktovat všechny 
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ověřovací kód(povinné)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XPz-6e-tCh">
                                                         <rect key="frame" x="0.0" y="92.666666666666671" width="343" height="44.000000000000014"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="smsInput"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="44" id="ezO-67-yb2"/>
                                                         </constraints>
@@ -239,6 +241,7 @@ Když se potvrdí nákaza u vás, hygienická stanice bude kontaktovat všechny 
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDN-Uj-w2M" userLabel="Action Button" customClass="RoundedButtonFilled" customModule="eRouska" customModuleProvider="target">
                                         <rect key="frame" x="16" y="50" width="343" height="44"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="verifyButton"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="qyb-VU-W0a"/>
                                         </constraints>
@@ -457,6 +460,7 @@ Když se potvrdí nákaza u vás, hygienická stanice bude kontaktovat všechny 
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefonní číslo (povinné)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lga-hM-kAK">
                                                                 <rect key="frame" x="60" y="0.0" width="283" height="44"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="phoneNumberInput"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="44" id="9bG-7B-cj9"/>
                                                                 </constraints>
@@ -479,6 +483,7 @@ Když se potvrdí nákaza u vás, hygienická stanice bude kontaktovat všechny 
                                                             </label>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="N6i-Um-KwL">
                                                                 <rect key="frame" x="294" y="0.0" width="51" height="31"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="confirmSwitch"/>
                                                                 <connections>
                                                                     <action selector="permissionSwitch:" destination="Suq-UZ-u6k" eventType="valueChanged" id="OdB-Bb-2cd"/>
                                                                 </connections>
@@ -536,6 +541,7 @@ Když se potvrdí nákaza u vás, hygienická stanice bude kontaktovat všechny 
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4n-ew-pkC" customClass="RoundedButtonFilled" customModule="eRouska" customModuleProvider="target">
                                         <rect key="frame" x="16" y="50" width="343" height="44"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="continueButton"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="WpZ-Vp-Azt"/>
                                         </constraints>
@@ -671,6 +677,7 @@ Když se potvrdí nákaza u vás, hygienická stanice bude kontaktovat všechny 
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzc-3p-o5r" customClass="RoundedButtonFilled" customModule="eRouska" customModuleProvider="target">
                                         <rect key="frame" x="16" y="50" width="343" height="44"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="continueButton"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="ApL-EF-RGU"/>
                                         </constraints>
@@ -723,14 +730,14 @@ Když se potvrdí nákaza u vás, hygienická stanice bude kontaktovat všechny 
             <point key="canvasLocation" x="455" y="-31"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="LBz-k7-fXB"/>
-        <segue reference="S39-Cf-beJ"/>
-        <segue reference="p0J-jR-yfg"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="BluetoothIlustration" width="130" height="130"/>
         <image name="MinLogo" width="328" height="29.333333969116211"/>
         <image name="Notification" width="130" height="130"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="LBz-k7-fXB"/>
+        <segue reference="utZ-G0-Rhr"/>
+        <segue reference="kyL-aQ-rgP"/>
+    </inferredMetricsTieBreakers>
 </document>

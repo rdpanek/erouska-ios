@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F22951890188004EABDE6B0 /* Pods_eRouska_Prod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901543BFDFC98881AEBFBB13 /* Pods_eRouska_Prod.framework */; };
+		17549FA0244CDF440093762F /* eRouska_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17549F9F244CDF440093762F /* eRouska_UITests.swift */; };
 		46269D0624472BAF00FA3DB2 /* AboutDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46269D0524472BAF00FA3DB2 /* AboutDataCell.swift */; };
 		46269D0824472BBF00FA3DB2 /* ScanningInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46269D0724472BBF00FA3DB2 /* ScanningInfoCell.swift */; };
 		4657C454243BD03D009E0E85 /* NotificationPermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4657C453243BD03D009E0E85 /* NotificationPermissionController.swift */; };
@@ -188,7 +189,20 @@
 		FFC4432624460D78002D2A6D /* MarkdownBackups.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFC4432524460D78002D2A6D /* MarkdownBackups.strings */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		17549FA2244CDF440093762F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8054C0A5241D492F008907B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8054C0AC241D492F008907B8;
+			remoteInfo = "eRouska Dev";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		17549F9D244CDF440093762F /* eRouska UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eRouska UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17549F9F244CDF440093762F /* eRouska_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eRouska_UITests.swift; sourceTree = "<group>"; };
+		17549FA1244CDF440093762F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36B74F0ACDA2058DF8F78955 /* Pods-eRouska Prod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eRouska Prod.debug.xcconfig"; path = "Target Support Files/Pods-eRouska Prod/Pods-eRouska Prod.debug.xcconfig"; sourceTree = "<group>"; };
 		415971C466B2F5E07A8A5EB4 /* Pods-BT-Tracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BT-Tracking.release.xcconfig"; path = "Target Support Files/Pods-BT-Tracking/Pods-BT-Tracking.release.xcconfig"; sourceTree = "<group>"; };
 		46269D0524472BAF00FA3DB2 /* AboutDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDataCell.swift; sourceTree = "<group>"; };
@@ -284,6 +298,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		17549F9A244CDF440093762F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8054C0AA241D492F008907B8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +345,15 @@
 				92B6F3DD54AC70DE127D4736 /* Pods-eRouska Prod.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		17549F9E244CDF440093762F /* eRouska UITests */ = {
+			isa = PBXGroup;
+			children = (
+				17549F9F244CDF440093762F /* eRouska_UITests.swift */,
+				17549FA1244CDF440093762F /* Info.plist */,
+			);
+			path = "eRouska UITests";
 			sourceTree = "<group>";
 		};
 		46269D0924475B6900FA3DB2 /* About Data */ = {
@@ -387,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				8054C0AF241D492F008907B8 /* BT-Tracking */,
+				17549F9E244CDF440093762F /* eRouska UITests */,
 				8054C0AE241D492F008907B8 /* Products */,
 				05740D8C6D5179F12E3E9CF4 /* Pods */,
 				5357F8D365121189A6E32250 /* Frameworks */,
@@ -399,6 +430,7 @@
 				8054C0AD241D492F008907B8 /* eRouska.app */,
 				80BB475E24212A3C00F552FC /* eRouska Mac.app */,
 				8083D8F4244640A0007FA4E9 /* eRouska Prod.app */,
+				17549F9D244CDF440093762F /* eRouska UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -635,6 +667,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		17549F9C244CDF440093762F /* eRouska UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17549FA6244CDF440093762F /* Build configuration list for PBXNativeTarget "eRouska UITests" */;
+			buildPhases = (
+				17549F99244CDF440093762F /* Sources */,
+				17549F9A244CDF440093762F /* Frameworks */,
+				17549F9B244CDF440093762F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17549FA3244CDF440093762F /* PBXTargetDependency */,
+			);
+			name = "eRouska UITests";
+			productName = "eRouska UITests";
+			productReference = 17549F9D244CDF440093762F /* eRouska UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		8054C0AC241D492F008907B8 /* eRouska Dev */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8054C0C1241D4932008907B8 /* Build configuration list for PBXNativeTarget "eRouska Dev" */;
@@ -704,6 +754,10 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Covid19CZ;
 				TargetAttributes = {
+					17549F9C244CDF440093762F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8054C0AC241D492F008907B8;
+					};
 					8054C0AC241D492F008907B8 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -726,11 +780,19 @@
 				8054C0AC241D492F008907B8 /* eRouska Dev */,
 				8083D8A5244640A0007FA4E9 /* eRouska Prod */,
 				80BB474624212A3C00F552FC /* eRouska Mac */,
+				17549F9C244CDF440093762F /* eRouska UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		17549F9B244CDF440093762F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8054C0AB241D492F008907B8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -938,6 +1000,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		17549F99244CDF440093762F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17549FA0244CDF440093762F /* eRouska_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8054C0A9241D492F008907B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1112,6 +1182,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		17549FA3244CDF440093762F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8054C0AC241D492F008907B8 /* eRouska Dev */;
+			targetProxy = 17549FA2244CDF440093762F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		8054C0B6241D492F008907B8 /* Debug.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -1141,6 +1219,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		17549FA4244CDF440093762F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62884AX6G8;
+				INFOPLIST_FILE = "eRouska UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.teststack.eRouska-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "eRouska Dev";
+			};
+			name = Debug;
+		};
+		17549FA5244CDF440093762F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62884AX6G8;
+				INFOPLIST_FILE = "eRouska UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.teststack.eRouska-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "eRouska Dev";
+			};
+			name = Release;
+		};
 		8054C0BF241D4932008907B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1400,6 +1518,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		17549FA6244CDF440093762F /* Build configuration list for PBXNativeTarget "eRouska UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17549FA4244CDF440093762F /* Debug */,
+				17549FA5244CDF440093762F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8054C0A8241D492F008907B8 /* Build configuration list for PBXProject "BT-Tracking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
